@@ -2,6 +2,11 @@
 
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+          
+
+
 <!--
 **n75uxy190/n75uxy190** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
