@@ -3,7 +3,7 @@
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 
 ## Tools & Languages
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" height="40"/> <img src="https://imagej.github.io/imagej-wiki-static/KNIME" width="40" height="40" />
 
           
 
