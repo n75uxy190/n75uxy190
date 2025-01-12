@@ -4,7 +4,11 @@
 >
 > I have a passion for finding solutions by analyzing real data. For any inquiries or a private consultation on business solutions, feel free to contact me!
 \
-![Data Science](https://img.shields.io/badge/Data-Science-FCA121?style=flat)
+![Data Science](https://img.shields.io/badge/Data_Science-00458B?style=flat)
+![Artificial Intelligence](https://img.shields.io/badge/Artificial_Intelligence-6C1D7C?style=flat)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-01A3A4?style=flat)
+![Mathematics](https://img.shields.io/badge/Mathematics-CD5C5C?style=flat)
+![Physics](https://img.shields.io/badge/Physics-0066CC?style=flat)
 
 ## Tools & Languages 
 Primarily I use Java, Python, KNIME, Jupyter, HTML, CSS, Javascript, & Tensorflow.\
