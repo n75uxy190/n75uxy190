@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <style>
     .terminal { font: 14px 'Courier New'; }
     .prompt { fill: #5ff967; }
     .command { fill: white; }
     
-    /* Define character appearances with variable timing */
     @keyframes typeChar {
       0% { opacity: 0; }
       100% { opacity: 1; }
@@ -20,47 +19,78 @@
       animation: blink 1s infinite;
     }
 
-    /* Characters with varying delays for natural typing */
     .char { 
       opacity: 0;
       animation: typeChar 0.05s forwards;
     }
-    .char1 { animation-delay: 0.2s; }
-    .char2 { animation-delay: 0.35s; }
-    .char3 { animation-delay: 0.5s; }
-    .char4 { animation-delay: 0.8s; }
-    .char5 { animation-delay: 1.0s; }
-    .char6 { animation-delay: 1.15s; }
-    .char7 { animation-delay: 1.4s; }
-    .char8 { animation-delay: 1.55s; }
-    .char9 { animation-delay: 1.8s; }
-    .char10 { animation-delay: 1.95s; }
-    .char11 { animation-delay: 2.1s; }
-    .char12 { animation-delay: 2.4s; }
-    .char13 { animation-delay: 2.6s; }
-    .char14 { animation-delay: 2.75s; }
-    .char15 { animation-delay: 2.9s; }
-    .char16 { animation-delay: 3.1s; }
-    .char17 { animation-delay: 3.3s; }
-    .char18 { animation-delay: 3.45s; }
-    .char19 { animation-delay: 3.6s; }
+
+    /* Fast typing for 'pip install' with corresponding percentages */
+    .char1 { animation-delay: 0.1s; }  /* 3.57% */
+    .char2 { animation-delay: 0.15s; } /* 5.36% */
+    .char3 { animation-delay: 0.2s; }  /* 7.14% */
+    .char4 { animation-delay: 0.25s; } /* 8.93% */
+    .char5 { animation-delay: 0.3s; }  /* 10.71% */
+    .char6 { animation-delay: 0.35s; } /* 12.5% */
+    .char7 { animation-delay: 0.4s; }  /* 14.29% */
+    .char8 { animation-delay: 0.45s; } /* 16.07% */
+    .char9 { animation-delay: 0.5s; }  /* 17.86% */
+    .char10 { animation-delay: 0.55s; } /* 19.64% */
+    .char11 { animation-delay: 0.6s; }  /* 21.43% */
+    .char12 { animation-delay: 0.65s; } /* 23.21% */
+
+    /* Slower typing for 'profile' */
+    .char13 { animation-delay: 1.0s; }  /* 35.71% */
+    .char14 { animation-delay: 1.3s; }  /* 46.43% */
+    .char15 { animation-delay: 1.6s; }  /* 57.14% */
+    .char16 { animation-delay: 1.9s; }  /* 67.86% */
+    .char17 { animation-delay: 2.2s; }  /* 78.57% */
+    .char18 { animation-delay: 2.5s; }  /* 89.29% */
+    .char19 { animation-delay: 2.8s; }  /* 100% */
+
+    /* Cursor movement keyframes matching exact character timings */
+    @keyframes cursorMove {
+      0%, 3.57% { transform: translateX(20px); }        /* Initial position */
+      3.57%, 5.36% { transform: translateX(28px); }     /* After 'p' */
+      5.36%, 7.14% { transform: translateX(36px); }     /* After 'i' */
+      7.14%, 8.93% { transform: translateX(44px); }     /* After 'p' */
+      8.93%, 10.71% { transform: translateX(52px); }    /* After space */
+      10.71%, 12.5% { transform: translateX(60px); }    /* After 'i' */
+      12.5%, 14.29% { transform: translateX(68px); }    /* After 'n' */
+      14.29%, 16.07% { transform: translateX(76px); }   /* After 's' */
+      16.07%, 17.86% { transform: translateX(84px); }   /* After 't' */
+      17.86%, 19.64% { transform: translateX(92px); }   /* After 'a' */
+      19.64%, 21.43% { transform: translateX(100px); }  /* After 'l' */
+      21.43%, 23.21% { transform: translateX(108px); }  /* After 'l' */
+      23.21%, 35.71% { transform: translateX(116px); }  /* After space and pause */
+      35.71%, 46.43% { transform: translateX(124px); }  /* After 'p' */
+      46.43%, 57.14% { transform: translateX(132px); }  /* After 'r' */
+      57.14%, 67.86% { transform: translateX(140px); }  /* After 'o' */
+      67.86%, 78.57% { transform: translateX(148px); }  /* After 'f' */
+      78.57%, 89.29% { transform: translateX(156px); }  /* After 'i' */
+      89.29%, 100% { transform: translateX(164px); }    /* After 'l' */
+      100% { transform: translateX(172px); }            /* Final position after 'e' */
+    }
+
+    .cursor-container {
+      animation: cursorMove 2.8s steps(1, end) forwards;
+    }
   </style>
   
   <!-- Terminal background -->
-  <rect width="600" height="300" fill="#2d2d2d" rx="10"/>
+  <rect width="400" height="100" fill="#2d2d2d" rx="10"/>
   
   <!-- Terminal header -->
-  <rect width="600" height="30" fill="#424242" rx="10 10 0 0"/>
+  <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
   
   <!-- Terminal buttons -->
-  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
-  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
-  <circle cx="60" cy="15" r="6" fill="#27c93f"/>
+  <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
+  <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
+  <circle cx="45" cy="12" r="4" fill="#27c93f"/>
   
   <!-- Terminal content -->
-  <g class="terminal" transform="translate(20, 50)">
+  <g class="terminal" transform="translate(15, 45)">
     <text class="prompt" x="0" dy="1em">$</text>
-    <!-- Each character as a separate text element with char and charN classes -->
+    <!-- Fast typing for 'pip install' -->
     <text class="command char char1" x="20" dy="1em">p</text>
     <text class="command char char2" x="28" dy="1em">i</text>
     <text class="command char char3" x="36" dy="1em">p</text>
@@ -73,6 +103,7 @@
     <text class="command char char10" x="92" dy="1em">l</text>
     <text class="command char char11" x="100" dy="1em">l</text>
     <text class="command char char12" x="108" dy="1em"> </text>
+    <!-- Slower typing for 'profile' -->
     <text class="command char char13" x="116" dy="1em">p</text>
     <text class="command char char14" x="124" dy="1em">r</text>
     <text class="command char char15" x="132" dy="1em">o</text>
@@ -80,7 +111,9 @@
     <text class="command char char17" x="148" dy="1em">i</text>
     <text class="command char char18" x="156" dy="1em">l</text>
     <text class="command char char19" x="164" dy="1em">e</text>
-    <!-- Cursor follows the text -->
-    <rect class="cursor" x="172" y="2" width="8" height="16"/>
+    <!-- Cursor with matched movement -->
+    <g class="cursor-container">
+      <rect class="cursor" x="0" y="2" width="8" height="16"/>
+    </g>
   </g>
 </svg>
