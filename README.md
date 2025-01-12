@@ -3,6 +3,8 @@
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 >
 > I have a passion for finding solutions by analyzing real data. For any inquiries or a private consultation on business solutions, feel free to contact me!
+\
+![Data Science](https://img.shields.io/badge/Data-Science-FCA121?style=flat)
 
 ## Tools & Languages 
 Primarily I use Java, Python, KNIME, Jupyter, HTML, CSS, Javascript, & Tensorflow.\
