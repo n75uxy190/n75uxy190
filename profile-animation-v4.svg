@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200" viewBox="0 0 400 200">
   <style>
-    .prompt { fill: #5ff967; }
-    .command, .output { fill: white; }
-    .highlight { fill: #5ff967; }
+    .prompt { fill: #33D655; }
+    .command, .output { fill: #A0AEC0; }
+    .highlight { fill: #33D655; }
+    .success-check { fill: #33D655; }
     
     @keyframes typeChar {
       0% { opacity: 0; }
@@ -47,30 +48,30 @@
     .output3 { animation-delay: 3.6s; }
     .output4 { animation-delay: 3.8s; }
     .output5 { animation-delay: 4.0s; }
-    .output6 { animation-delay: 4.2s; }
     .welcome { animation-delay: 4.5s; }
 
+    /* Cursor movement keyframes */
     @keyframes cursorMove {
-      0%, 3.57% { transform: translateX(20px); }
-      3.57%, 5.36% { transform: translateX(28px); }
-      5.36%, 7.14% { transform: translateX(36px); }
-      7.14%, 8.93% { transform: translateX(44px); }
-      8.93%, 10.71% { transform: translateX(52px); }
-      10.71%, 12.5% { transform: translateX(60px); }
-      12.5%, 14.29% { transform: translateX(68px); }
-      14.29%, 16.07% { transform: translateX(76px); }
-      16.07%, 17.86% { transform: translateX(84px); }
-      17.86%, 19.64% { transform: translateX(92px); }
-      19.64%, 21.43% { transform: translateX(100px); }
-      21.43%, 23.21% { transform: translateX(108px); }
-      23.21%, 35.71% { transform: translateX(116px); }
-      35.71%, 46.43% { transform: translateX(124px); }
-      46.43%, 57.14% { transform: translateX(132px); }
-      57.14%, 67.86% { transform: translateX(140px); }
-      67.86%, 78.57% { transform: translateX(148px); }
-      78.57%, 89.29% { transform: translateX(156px); }
-      89.29%, 100% { transform: translateX(164px); }
-      100% { transform: translateX(172px); }
+      0%, 3.57% { transform: translateX(20px); }      /* Start position */
+      3.57%, 5.36% { transform: translateX(28px); }   /* After 'p' */
+      5.36%, 7.14% { transform: translateX(36px); }   /* After 'i' */
+      7.14%, 8.93% { transform: translateX(44px); }   /* After 'p' */
+      8.93%, 10.71% { transform: translateX(52px); }  /* After space */
+      10.71%, 12.5% { transform: translateX(60px); }  /* After 'i' */
+      12.5%, 14.29% { transform: translateX(68px); }  /* After 'n' */
+      14.29%, 16.07% { transform: translateX(76px); } /* After 's' */
+      16.07%, 17.86% { transform: translateX(84px); } /* After 't' */
+      17.86%, 19.64% { transform: translateX(92px); } /* After 'a' */
+      19.64%, 21.43% { transform: translateX(100px); }/* After 'l' */
+      21.43%, 23.21% { transform: translateX(108px); }/* After 'l' */
+      23.21%, 35.71% { transform: translateX(116px); }/* After space */
+      35.71%, 46.43% { transform: translateX(124px); }/* After 'p' */
+      46.43%, 57.14% { transform: translateX(132px); }/* After 'r' */
+      57.14%, 67.86% { transform: translateX(140px); }/* After 'o' */
+      67.86%, 78.57% { transform: translateX(148px); }/* After 'f' */
+      78.57%, 89.29% { transform: translateX(156px); }/* After 'i' */
+      89.29%, 95% { transform: translateX(164px); }   /* After 'l' */
+      95%, 100% { transform: translateX(172px); }     /* Final position after 'e' */
     }
 
     .cursor-container {
@@ -79,13 +80,13 @@
   </style>
   
   <!-- Terminal background -->
-  <rect width="400" height="200" fill="#2d2d2d" rx="10">
+  <rect width="400" height="200" fill="#1B1F24" rx="10">
     <!-- Animation trigger -->
     <animate attributeName="rx" values="10;10" dur="0.1s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Terminal header -->
-  <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
+  <rect width="400" height="25" fill="#2A3038" rx="10 10 0 0"/>
   
   <!-- Terminal buttons -->
   <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
@@ -94,11 +95,10 @@
   
   <!-- Terminal content -->
   <g transform="translate(15, 45)" font-family="monospace" font-size="14">
-    <!-- Command line -->
     <text class="prompt" x="0" dy="1em">$</text>
     
     <!-- Command typing -->
-    <g fill="white">
+    <g>
       <text class="command char char1" x="20" dy="1em">p</text>
       <text class="command char char2" x="28" dy="1em">i</text>
       <text class="command char char3" x="36" dy="1em">p</text>
@@ -132,7 +132,7 @@
 
     <!-- Cursor -->
     <g class="cursor-container">
-      <rect class="cursor" x="0" y="2" width="8" height="16" fill="white">
+      <rect class="cursor" x="0" y="2" width="8" height="16" fill="#A0AEC0">
         <animate attributeName="opacity" values="1;1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
       </rect>
     </g>
