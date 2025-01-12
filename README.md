@@ -2,7 +2,7 @@
 ![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-animation.svg)
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 
-## Tools & Languages
+## Tools & Languages 
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" height="40"/> <img src="https://striking-kindness-e0d93214bb.media.strapiapp.com/KNIME_Logo_28316144fa.png" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" width="40" height="40"/>
 
 ## This Week's Schedule
