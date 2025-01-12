@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- Definitions for reusable elements -->
+  <defs>
+    <!-- Animation that repeats forever for the cursor blink -->
+    <animate id="cursorBlink" 
+             attributeName="opacity"
+             values="1;1;1;0;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+  </defs>
+
+  <!-- Background elements -->
+  <rect width="400" height="100" fill="#2d2d2d" rx="10">
+    <!-- This triggers a constant tiny update to keep animations fresh -->
+    <animate attributeName="rx" values="10;10" dur="0.1s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
+  <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
+  <circle cx="45" cy="12" r="4" fill="#27c93f"/>
+  
+  <!-- Terminal content group -->
+  <g transform="translate(15, 45)">
+    <!-- Prompt -->
+    <text class="prompt" x="0" dy="1em" fill="#5ff967">$</text>
+    
+    <!-- Command text characters -->
+    <g fill="white">
+      <!-- Fast typing part: "pip install " -->
+      <text x="20" dy="1em" opacity="0">p<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.1s" fill="freeze"/></text>
+      <text x="28" dy="1em" opacity="0">i<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.15s" fill="freeze"/></text>
+      <text x="36" dy="1em" opacity="0">p<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.2s" fill="freeze"/></text>
+      <text x="44" dy="1em" opacity="0"> <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.25s" fill="freeze"/></text>
+      <text x="52" dy="1em" opacity="0">i<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.3s" fill="freeze"/></text>
+      <text x="60" dy="1em" opacity="0">n<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.35s" fill="freeze"/></text>
+      <text x="68" dy="1em" opacity="0">s<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.4s" fill="freeze"/></text>
+      <text x="76" dy="1em" opacity="0">t<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.45s" fill="freeze"/></text>
+      <text x="84" dy="1em" opacity="0">a<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.5s" fill="freeze"/></text>
+      <text x="92" dy="1em" opacity="0">l<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.55s" fill="freeze"/></text>
+      <text x="100" dy="1em" opacity="0">l<animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.6s" fill="freeze"/></text>
+      <text x="108" dy="1em" opacity="0"> <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.65s" fill="freeze"/></text>
+      
+      <!-- Slower typing part: "profile" -->
+      <text x="116" dy="1em" opacity="0">p<animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.0s" fill="freeze"/></text>
+      <text x="124" dy="1em" opacity="0">r<animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.3s" fill="freeze"/></text>
+      <text x="132" dy="1em" opacity="0">o<animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.6s" fill="freeze"/></text>
+      <text x="140" dy="1em" opacity="0">f<animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.9s" fill="freeze"/></text>
+      <text x="148" dy="1em" opacity="0">i<animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.2s" fill="freeze"/></text>
+      <text x="156" dy="1em" opacity="0">l<animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.5s" fill="freeze"/></text>
+      <text x="164" dy="1em" opacity="0">e<animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.8s" fill="freeze"/></text>
+    </g>
+    
+    <!-- Cursor -->
+    <g>
+      <rect class="cursor" width="8" height="16" y="2" fill="white">
+        <!-- Cursor movement animation -->
+        <animate attributeName="x" 
+                 values="20;28;36;44;52;60;68;76;84;92;100;108;116;124;132;140;148;156;164;172"
+                 dur="2.8s"
+                 fill="freeze"
+                 calcMode="discrete"/>
+        <!-- Cursor blink animation -->
+        <animate attributeName="opacity"
+                 values="1;1;1;0;0;1"
+                 dur="1s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- Reset trigger - animates the whole SVG periodically -->
+  <animate xlink:href="#terminal"
+           attributeName="visibility"
+           values="visible;visible"
+           dur="3s"
+           repeatCount="indefinite"/>
+</svg>
