@@ -9,7 +9,8 @@
             
 ## Currently Working On
 
-- Workflow patterns involving time-series analysis: ARIMA modeling, seasonal decomposition, missing value imputation, & out-of-sample forecasting validation for applications in predictive analysis.
+- Workflow patterns involving: time-series analysis, ARIMA modeling, seasonal decomposition, missing value imputation, & out-of-sample forecasting validation for applications in predictive analysis.
+- Workflow patterns involving: recommendation systems, association rule mining, data pipelines for preference analysis & automated recommendations using user's social media & behaviour patterns.
 
 ## This Week's Schedule
 
