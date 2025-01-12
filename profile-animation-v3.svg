@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200" viewBox="0 0 400 200">
   <style>
-    /* Base styles remain the same */
-    .terminal { font: 14px 'Courier New'; }
     .prompt { fill: #5ff967; }
-    .command { fill: white; }
+    .command, .output { fill: white; }
+    .highlight { fill: #5ff967; }
     
     @keyframes typeChar {
       0% { opacity: 0; }
@@ -15,21 +15,12 @@
       50% { opacity: 0; }
     }
 
-    /* Add restart behavior to cursor blink */
-    .cursor {
-      fill: white;
-      animation: blink 1s infinite;
-      animation-fill-mode: forwards;
-    }
-
-    /* Add restart behavior to characters */
     .char { 
       opacity: 0;
       animation: typeChar 0.05s forwards;
-      animation-play-state: running;
     }
 
-    /* Character timing with restart behavior */
+    /* Command typing animations */
     .char1 { animation-delay: 0.1s; }
     .char2 { animation-delay: 0.15s; }
     .char3 { animation-delay: 0.2s; }
@@ -42,7 +33,6 @@
     .char10 { animation-delay: 0.55s; }
     .char11 { animation-delay: 0.6s; }
     .char12 { animation-delay: 0.65s; }
-
     .char13 { animation-delay: 1.0s; }
     .char14 { animation-delay: 1.3s; }
     .char15 { animation-delay: 1.6s; }
@@ -50,6 +40,15 @@
     .char17 { animation-delay: 2.2s; }
     .char18 { animation-delay: 2.5s; }
     .char19 { animation-delay: 2.8s; }
+
+    /* Installation output animations */
+    .output1 { animation-delay: 3.2s; }
+    .output2 { animation-delay: 3.4s; }
+    .output3 { animation-delay: 3.6s; }
+    .output4 { animation-delay: 3.8s; }
+    .output5 { animation-delay: 4.0s; }
+    .output6 { animation-delay: 4.2s; }
+    .welcome { animation-delay: 4.5s; }
 
     @keyframes cursorMove {
       0%, 3.57% { transform: translateX(20px); }
@@ -74,32 +73,32 @@
       100% { transform: translateX(172px); }
     }
 
-    /* Add restart behavior to cursor movement */
     .cursor-container {
       animation: cursorMove 2.8s steps(1, end) forwards;
-      animation-play-state: running;
     }
   </style>
   
-  <!-- SVG content with restart attributes -->
-  <g>
-    <!-- Terminal background -->
-    <rect width="400" height="100" fill="#2d2d2d" rx="10">
-      <set attributeName="opacity" to="1" dur="0.01s" repeatCount="indefinite"/>
-    </rect>
+  <!-- Terminal background -->
+  <rect width="400" height="200" fill="#2d2d2d" rx="10">
+    <!-- Animation trigger -->
+    <animate attributeName="rx" values="10;10" dur="0.1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Terminal header -->
+  <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
+  <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
+  <circle cx="45" cy="12" r="4" fill="#27c93f"/>
+  
+  <!-- Terminal content -->
+  <g transform="translate(15, 45)" font-family="monospace" font-size="14">
+    <!-- Command line -->
+    <text class="prompt" x="0" dy="1em">$</text>
     
-    <!-- Terminal header -->
-    <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
-    
-    <!-- Terminal buttons -->
-    <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
-    <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
-    <circle cx="45" cy="12" r="4" fill="#27c93f"/>
-    
-    <!-- Terminal content -->
-    <g class="terminal" transform="translate(15, 45)">
-      <text class="prompt" x="0" dy="1em">$</text>
-      <!-- Characters with restart behavior -->
+    <!-- Command typing -->
+    <g fill="white">
       <text class="command char char1" x="20" dy="1em">p</text>
       <text class="command char char2" x="28" dy="1em">i</text>
       <text class="command char char3" x="36" dy="1em">p</text>
@@ -119,9 +118,23 @@
       <text class="command char char17" x="148" dy="1em">i</text>
       <text class="command char char18" x="156" dy="1em">l</text>
       <text class="command char char19" x="164" dy="1em">e</text>
-      <g class="cursor-container">
-        <rect class="cursor" x="0" y="2" width="8" height="16"/>
-      </g>
+    </g>
+
+    <!-- Installation output -->
+    <g>
+      <text class="output char output1" x="0" dy="3em">Collecting profile...</text>
+      <text class="output char output2" x="0" dy="4em">Installing dependencies...</text>
+      <text class="highlight char output3" x="0" dy="5em">✓ Dependencies installed successfully</text>
+      <text class="output char output4" x="0" dy="6em">Building profile components...</text>
+      <text class="highlight char output5" x="0" dy="7em">✓ Profile built successfully</text>
+      <text class="output char welcome" x="0" dy="9em">Welcome! 👋</text>
+    </g>
+
+    <!-- Cursor -->
+    <g class="cursor-container">
+      <rect class="cursor" x="0" y="2" width="8" height="16" fill="white">
+        <animate attributeName="opacity" values="1;1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
     </g>
   </g>
 </svg>
