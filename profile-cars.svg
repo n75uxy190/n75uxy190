@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <!-- Enhanced tunnel gradient for better depth effect -->
+    <linearGradient id="tunnelGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Stronger glow effect for vehicles -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Subtle tech grid background -->
+  <path d="M 0 120 H 800" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M 0 80 H 800" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Tunnel entrances with enhanced depth -->
+  <path d="M 50 60 Q 50 140 50 140" stroke="url(#tunnelGradient)" stroke-width="30" fill="none" />
+  <path d="M 750 60 Q 750 140 750 140" stroke="url(#tunnelGradient)" stroke-width="30" fill="none" />
+
+  <!-- Data vehicles with varied colors and spacing -->
+  <!-- Deep Blue Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#2196F3" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#90CAF9">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Emerald Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#4CAF50" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#A5D6A7">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Purple Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#9C27B0" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#E1BEE7">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Teal Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#009688" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#80CBC4">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Orange Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#FF5722" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="3.3s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#FFAB91">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="3.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Pink Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#E91E63" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#F48FB1">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Indigo Vehicle -->
+  <g filter="url(#glow)">
+    <rect x="-80" y="90" width="25" height="15" fill="#3F51B5" rx="4">
+      <animate attributeName="x" from="-100" to="900" dur="6s" begin="5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="-67.5" cy="97.5" r="3" fill="#9FA8DA">
+      <animate attributeName="cx" from="-87.5" to="912.5" dur="6s" begin="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Processing stage indicators -->
+  <g id="stages" fill="#ffffff" font-family="Arial" font-size="12">
+    <text x="100" y="70">Input</text>
+    <text x="300" y="70">Transform</text>
+    <text x="500" y="70">Process</text>
+    <text x="700" y="70">Output</text>
+  </g>
+
+  <style>
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    #stages text {
+      animation: fadeInOut 6s infinite;
+    }
+    #stages text:nth-child(1) { animation-delay: 0s; }
+    #stages text:nth-child(2) { animation-delay: 1.5s; }
+    #stages text:nth-child(3) { animation-delay: 3s; }
+    #stages text:nth-child(4) { animation-delay: 4.5s; }
+  </style>
+</svg>
