@@ -9,9 +9,9 @@
 
 - An Introduction to Galois Representations - by Alvaro Lozano-Robledo
 - Hypergeometric Functions, Character Sums and Applications - by Ling Long 
-<!-- 
 
--->
+![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-cars.svg)
+
 <!--
 **n75uxy190/n75uxy190** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
