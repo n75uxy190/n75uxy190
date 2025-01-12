@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <style>
+    .terminal { font: 14px 'Courier New'; }
+    .prompt { fill: #5ff967; }
+    .command { fill: white; }
+    @keyframes typing {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor {
+      fill: white;
+      animation: blink 1s infinite;
+    }
+    .typing-text {
+      animation: typing 3s steps(20, end);
+    }
+  </style>
+  
+  <!-- Terminal background -->
+  <rect width="600" height="300" fill="#2d2d2d" rx="10"/>
+  
+  <!-- Terminal header -->
+  <rect width="600" height="30" fill="#424242" rx="10 10 0 0"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="15" r="6" fill="#27c93f"/>
+  
+  <!-- Terminal content -->
+  <g class="terminal" transform="translate(20, 50)">
+    <text class="prompt" x="0" dy="1em">$</text>
+    <text class="command typing-text" x="20" dy="1em">pip install profile</text>
+    <rect class="cursor" x="180" y="2" width="8" height="16"/>
+  </g>
+</svg>
