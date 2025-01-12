@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <style>
+    /* Base styles remain the same */
     .terminal { font: 14px 'Courier New'; }
     .prompt { fill: #5ff967; }
     .command { fill: white; }
@@ -14,106 +15,113 @@
       50% { opacity: 0; }
     }
 
+    /* Add restart behavior to cursor blink */
     .cursor {
       fill: white;
       animation: blink 1s infinite;
+      animation-fill-mode: forwards;
     }
 
+    /* Add restart behavior to characters */
     .char { 
       opacity: 0;
       animation: typeChar 0.05s forwards;
+      animation-play-state: running;
     }
 
-    /* Fast typing for 'pip install' with corresponding percentages */
-    .char1 { animation-delay: 0.1s; }  /* 3.57% */
-    .char2 { animation-delay: 0.15s; } /* 5.36% */
-    .char3 { animation-delay: 0.2s; }  /* 7.14% */
-    .char4 { animation-delay: 0.25s; } /* 8.93% */
-    .char5 { animation-delay: 0.3s; }  /* 10.71% */
-    .char6 { animation-delay: 0.35s; } /* 12.5% */
-    .char7 { animation-delay: 0.4s; }  /* 14.29% */
-    .char8 { animation-delay: 0.45s; } /* 16.07% */
-    .char9 { animation-delay: 0.5s; }  /* 17.86% */
-    .char10 { animation-delay: 0.55s; } /* 19.64% */
-    .char11 { animation-delay: 0.6s; }  /* 21.43% */
-    .char12 { animation-delay: 0.65s; } /* 23.21% */
+    /* Character timing with restart behavior */
+    .char1 { animation-delay: 0.1s; }
+    .char2 { animation-delay: 0.15s; }
+    .char3 { animation-delay: 0.2s; }
+    .char4 { animation-delay: 0.25s; }
+    .char5 { animation-delay: 0.3s; }
+    .char6 { animation-delay: 0.35s; }
+    .char7 { animation-delay: 0.4s; }
+    .char8 { animation-delay: 0.45s; }
+    .char9 { animation-delay: 0.5s; }
+    .char10 { animation-delay: 0.55s; }
+    .char11 { animation-delay: 0.6s; }
+    .char12 { animation-delay: 0.65s; }
 
-    /* Slower typing for 'profile' */
-    .char13 { animation-delay: 1.0s; }  /* 35.71% */
-    .char14 { animation-delay: 1.3s; }  /* 46.43% */
-    .char15 { animation-delay: 1.6s; }  /* 57.14% */
-    .char16 { animation-delay: 1.9s; }  /* 67.86% */
-    .char17 { animation-delay: 2.2s; }  /* 78.57% */
-    .char18 { animation-delay: 2.5s; }  /* 89.29% */
-    .char19 { animation-delay: 2.8s; }  /* 100% */
+    .char13 { animation-delay: 1.0s; }
+    .char14 { animation-delay: 1.3s; }
+    .char15 { animation-delay: 1.6s; }
+    .char16 { animation-delay: 1.9s; }
+    .char17 { animation-delay: 2.2s; }
+    .char18 { animation-delay: 2.5s; }
+    .char19 { animation-delay: 2.8s; }
 
-    /* Cursor movement keyframes matching exact character timings */
     @keyframes cursorMove {
-      0%, 3.57% { transform: translateX(20px); }        /* Initial position */
-      3.57%, 5.36% { transform: translateX(28px); }     /* After 'p' */
-      5.36%, 7.14% { transform: translateX(36px); }     /* After 'i' */
-      7.14%, 8.93% { transform: translateX(44px); }     /* After 'p' */
-      8.93%, 10.71% { transform: translateX(52px); }    /* After space */
-      10.71%, 12.5% { transform: translateX(60px); }    /* After 'i' */
-      12.5%, 14.29% { transform: translateX(68px); }    /* After 'n' */
-      14.29%, 16.07% { transform: translateX(76px); }   /* After 's' */
-      16.07%, 17.86% { transform: translateX(84px); }   /* After 't' */
-      17.86%, 19.64% { transform: translateX(92px); }   /* After 'a' */
-      19.64%, 21.43% { transform: translateX(100px); }  /* After 'l' */
-      21.43%, 23.21% { transform: translateX(108px); }  /* After 'l' */
-      23.21%, 35.71% { transform: translateX(116px); }  /* After space and pause */
-      35.71%, 46.43% { transform: translateX(124px); }  /* After 'p' */
-      46.43%, 57.14% { transform: translateX(132px); }  /* After 'r' */
-      57.14%, 67.86% { transform: translateX(140px); }  /* After 'o' */
-      67.86%, 78.57% { transform: translateX(148px); }  /* After 'f' */
-      78.57%, 89.29% { transform: translateX(156px); }  /* After 'i' */
-      89.29%, 100% { transform: translateX(164px); }    /* After 'l' */
-      100% { transform: translateX(172px); }            /* Final position after 'e' */
+      0%, 3.57% { transform: translateX(20px); }
+      3.57%, 5.36% { transform: translateX(28px); }
+      5.36%, 7.14% { transform: translateX(36px); }
+      7.14%, 8.93% { transform: translateX(44px); }
+      8.93%, 10.71% { transform: translateX(52px); }
+      10.71%, 12.5% { transform: translateX(60px); }
+      12.5%, 14.29% { transform: translateX(68px); }
+      14.29%, 16.07% { transform: translateX(76px); }
+      16.07%, 17.86% { transform: translateX(84px); }
+      17.86%, 19.64% { transform: translateX(92px); }
+      19.64%, 21.43% { transform: translateX(100px); }
+      21.43%, 23.21% { transform: translateX(108px); }
+      23.21%, 35.71% { transform: translateX(116px); }
+      35.71%, 46.43% { transform: translateX(124px); }
+      46.43%, 57.14% { transform: translateX(132px); }
+      57.14%, 67.86% { transform: translateX(140px); }
+      67.86%, 78.57% { transform: translateX(148px); }
+      78.57%, 89.29% { transform: translateX(156px); }
+      89.29%, 100% { transform: translateX(164px); }
+      100% { transform: translateX(172px); }
     }
 
+    /* Add restart behavior to cursor movement */
     .cursor-container {
       animation: cursorMove 2.8s steps(1, end) forwards;
+      animation-play-state: running;
     }
   </style>
   
-  <!-- Terminal background -->
-  <rect width="400" height="100" fill="#2d2d2d" rx="10"/>
-  
-  <!-- Terminal header -->
-  <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
-  
-  <!-- Terminal buttons -->
-  <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
-  <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
-  <circle cx="45" cy="12" r="4" fill="#27c93f"/>
-  
-  <!-- Terminal content -->
-  <g class="terminal" transform="translate(15, 45)">
-    <text class="prompt" x="0" dy="1em">$</text>
-    <!-- Fast typing for 'pip install' -->
-    <text class="command char char1" x="20" dy="1em">p</text>
-    <text class="command char char2" x="28" dy="1em">i</text>
-    <text class="command char char3" x="36" dy="1em">p</text>
-    <text class="command char char4" x="44" dy="1em"> </text>
-    <text class="command char char5" x="52" dy="1em">i</text>
-    <text class="command char char6" x="60" dy="1em">n</text>
-    <text class="command char char7" x="68" dy="1em">s</text>
-    <text class="command char char8" x="76" dy="1em">t</text>
-    <text class="command char char9" x="84" dy="1em">a</text>
-    <text class="command char char10" x="92" dy="1em">l</text>
-    <text class="command char char11" x="100" dy="1em">l</text>
-    <text class="command char char12" x="108" dy="1em"> </text>
-    <!-- Slower typing for 'profile' -->
-    <text class="command char char13" x="116" dy="1em">p</text>
-    <text class="command char char14" x="124" dy="1em">r</text>
-    <text class="command char char15" x="132" dy="1em">o</text>
-    <text class="command char char16" x="140" dy="1em">f</text>
-    <text class="command char char17" x="148" dy="1em">i</text>
-    <text class="command char char18" x="156" dy="1em">l</text>
-    <text class="command char char19" x="164" dy="1em">e</text>
-    <!-- Cursor with matched movement -->
-    <g class="cursor-container">
-      <rect class="cursor" x="0" y="2" width="8" height="16"/>
+  <!-- SVG content with restart attributes -->
+  <g>
+    <!-- Terminal background -->
+    <rect width="400" height="100" fill="#2d2d2d" rx="10">
+      <set attributeName="opacity" to="1" dur="0.01s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Terminal header -->
+    <rect width="400" height="25" fill="#424242" rx="10 10 0 0"/>
+    
+    <!-- Terminal buttons -->
+    <circle cx="15" cy="12" r="4" fill="#ff5f56"/>
+    <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
+    <circle cx="45" cy="12" r="4" fill="#27c93f"/>
+    
+    <!-- Terminal content -->
+    <g class="terminal" transform="translate(15, 45)">
+      <text class="prompt" x="0" dy="1em">$</text>
+      <!-- Characters with restart behavior -->
+      <text class="command char char1" x="20" dy="1em">p</text>
+      <text class="command char char2" x="28" dy="1em">i</text>
+      <text class="command char char3" x="36" dy="1em">p</text>
+      <text class="command char char4" x="44" dy="1em"> </text>
+      <text class="command char char5" x="52" dy="1em">i</text>
+      <text class="command char char6" x="60" dy="1em">n</text>
+      <text class="command char char7" x="68" dy="1em">s</text>
+      <text class="command char char8" x="76" dy="1em">t</text>
+      <text class="command char char9" x="84" dy="1em">a</text>
+      <text class="command char char10" x="92" dy="1em">l</text>
+      <text class="command char char11" x="100" dy="1em">l</text>
+      <text class="command char char12" x="108" dy="1em"> </text>
+      <text class="command char char13" x="116" dy="1em">p</text>
+      <text class="command char char14" x="124" dy="1em">r</text>
+      <text class="command char char15" x="132" dy="1em">o</text>
+      <text class="command char char16" x="140" dy="1em">f</text>
+      <text class="command char char17" x="148" dy="1em">i</text>
+      <text class="command char char18" x="156" dy="1em">l</text>
+      <text class="command char char19" x="164" dy="1em">e</text>
+      <g class="cursor-container">
+        <rect class="cursor" x="0" y="2" width="8" height="16"/>
+      </g>
     </g>
   </g>
 </svg>
