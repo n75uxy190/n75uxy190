@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="220" viewBox="0 0 600 220">
   <style>
-    .header { fill: #e2e4ff; }
-    .text { fill: #a3a7d1; }
-    .highlight { fill: #e2e4ff; }
-    .success { fill: #88ddff; }
-    .username { fill: #e2e4ff; font-weight: bold; }
+    .header { fill: #61afef; }  /* Light blue for headers */
+    .text { fill: #abb2bf; }     /* Soft gray for regular text */
+    .highlight { fill: #98c379; } /* Green for highlights */
+    .success { fill: #c678dd; }   /* Purple for success messages */
+    .username { fill: #e5c07b; font-weight: bold; } /* Warm yellow for username */
     
     @keyframes typeChar {
       0% { opacity: 0; }
@@ -47,17 +47,17 @@
   
   <!-- Background with subtle gradient -->
   <defs>
-    <linearGradient id="profileBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" style="stop-color:#1a1b3b"/>
-      <stop offset="100%" style="stop-color:#232456"/>
+    <linearGradient id="editorBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#21252b"/>
+      <stop offset="100%" style="stop-color:#282c34"/>
     </linearGradient>
   </defs>
   
   <!-- Main background -->
-  <rect width="600" height="220" fill="url(#profileBg)"/>
+  <rect width="600" height="220" fill="url(#editorBg)"/>
   
   <!-- Content -->
-  <g transform="translate(15, 20)" font-family="monospace" font-size="12">
+  <g transform="translate(15, 20)" font-family="Consolas, monospace" font-size="12">
     <!-- Header section -->
     <text class="header" x="0" dy="1em">Full-Stack Development Environment BIOS v3.0.24</text>
     <text class="text" x="0" dy="2em">System Configuration Check</text>
