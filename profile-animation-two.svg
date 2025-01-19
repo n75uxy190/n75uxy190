@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="220" viewBox="0 0 600 220">
+  <style>
+    .header { fill: #ffffff; }
+    .text { fill: #cccccc; }
+    .highlight { fill: #ffffff; }
+    .success { fill: #50fa7b; }
+    .username { fill: #ffffff; font-weight: bold; }
+    
+    @keyframes typeChar {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .char { 
+      opacity: 0;
+      animation: typeChar 0.05s forwards;
+    }
+
+    /* Left column delays */
+    .l1 { animation-delay: 0.2s; }
+    .l2 { animation-delay: 0.4s; }
+    .l3 { animation-delay: 0.6s; }
+    .l4 { animation-delay: 0.8s; }
+    .l5 { animation-delay: 1.0s; }
+
+    /* Middle column delays */
+    .m1 { animation-delay: 1.4s; }
+    .m2 { animation-delay: 1.6s; }
+    .m3 { animation-delay: 1.8s; }
+    .m4 { animation-delay: 2.0s; }
+    .m5 { animation-delay: 2.2s; }
+
+    /* Right column delays */
+    .r1 { animation-delay: 2.6s; }
+    .r2 { animation-delay: 2.8s; }
+    .r3 { animation-delay: 3.0s; }
+    .r4 { animation-delay: 3.2s; }
+    .r5 { animation-delay: 3.4s; }
+
+    .final { animation-delay: 3.8s; }
+    .welcome { animation-delay: 4.2s; }
+  </style>
+  
+  <!-- BIOS blue background -->
+  <rect width="600" height="220" fill="#00008B"/>
+  
+  <!-- Content -->
+  <g transform="translate(15, 20)" font-family="monospace" font-size="12">
+    <!-- BIOS header -->
+    <text class="header" x="0" dy="1em">Full-Stack Development Environment BIOS v3.0.24</text>
+    <text class="text" x="0" dy="2em">System Configuration Check</text>
+    <text class="text" x="0" dy="3em">----------------------------------------</text>
+    
+    <!-- Left Column -->
+    <g transform="translate(0, 70)">
+      <text class="text char l1" x="0" dy="0em">Backend Runtime:</text>
+      <text class="success char l2" x="10" dy="1.6em">► Spring Boot 3.0</text>
+      <text class="success char l3" x="10" dy="3.2em">► API Components</text>
+      <text class="success char l4" x="10" dy="4.8em">► Security Layer</text>
+      <text class="success char l5" x="10" dy="6.4em">► Authentication</text>
+    </g>
+
+    <!-- Middle Column -->
+    <g transform="translate(220, 70)">
+      <text class="text char m1" x="0" dy="0em">Database Systems:</text>
+      <text class="success char m2" x="10" dy="1.6em">► PostgreSQL Active</text>
+      <text class="success char m3" x="10" dy="3.2em">► JPA + JDBC Ready</text>
+      <text class="success char m4" x="10" dy="4.8em">► Flyway Migration</text>
+      <text class="success char m5" x="10" dy="6.4em">► Data Layer OK</text>
+    </g>
+
+    <!-- Right Column -->
+    <g transform="translate(440, 70)">
+      <text class="text char r1" x="0" dy="0em">Cloud Infrastructure:</text>
+      <text class="success char r2" x="10" dy="1.6em">► Docker + AWS</text>
+      <text class="success char r3" x="10" dy="3.2em">► Microservices</text>
+      <text class="success char r4" x="10" dy="4.8em">► React/Angular UI</text>
+      <text class="success char r5" x="10" dy="6.4em">► TypeScript Ready</text>
+    </g>
+
+    <!-- Status Line with more spacing -->
+    <g transform="translate(0, 160)">
+      <text class="highlight char final" x="0" dy="0">Development Environment Initialized Successfully</text>
+      
+      <!-- Welcome Message with adjusted spacing -->
+      <text class="text char welcome" x="0" dy="1.8em">Welcome, </text>
+      <text class="username char welcome" x="70" dy="1.8em">n75uxy190</text>
+      <text class="text char welcome" x="150" dy="1.8em">| Press F12 for DevTools | ESC to exit</text>
+    </g>
+  </g>
+</svg>
