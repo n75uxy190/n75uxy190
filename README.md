@@ -1,5 +1,5 @@
 #  [![My Skills](https://skillicons.dev/icons?i=github)](https://skillicons.dev) // Homepage 
-![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-animation-two.svg)
+![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-animation-two-v2.svg)
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 >
 > I have a passion for finding solutions by analyzing real data. For any inquiries or a private consultation on business solutions, feel free to contact me!
