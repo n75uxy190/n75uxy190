@@ -12,30 +12,18 @@
 ![Physics](https://img.shields.io/badge/Physics-0066CC?style=flat)
 
 ## Tools & Languages 
-Primarily I use Java, Python, KNIME, Jupyter, HTML, CSS, Javascript, & Tensorflow.\
-\
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" height="40"/> <img src="https://striking-kindness-e0d93214bb.media.strapiapp.com/KNIME_Logo_28316144fa.png" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" width="40" height="40"/>\
-\
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![KNIME](https://img.shields.io/badge/KNIME-FCA121?style=flat)
-![Jupyter](https://img.shields.io/badge/Jupyter-343434?style=flat)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+Primarily I use Java, C++, Python, KNIME, Tensorflow, & more.
+
 
 ## Currently Working On
 
 - Workflow patterns involving: time-series analysis, ARIMA modeling, seasonal decomposition, missing value imputation, & out-of-sample forecasting validation for applications in predictive analysis.
 - Workflow patterns involving: recommendation systems, association rule mining, data pipelines for preference analysis & automated recommendations using user's social media & behaviour patterns.
 
-## This Week's Schedule
-
 - An Introduction to Galois Representations - by Alvaro Lozano-Robledo
 - Hypergeometric Functions, Character Sums and Applications - by Ling Long 
 
-![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-cars.svg)
+
 
 <!--
 **n75uxy190/n75uxy190** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
