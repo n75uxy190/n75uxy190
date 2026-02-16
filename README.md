@@ -2,7 +2,7 @@
 ![Profile Animation](https://raw.githubusercontent.com/n75uxy190/n75uxy190/main/profile-animation-two-v3.svg)
 > I'm a developer that works with data science, workflows in AI & ML, and modeling in mathematics & physics!
 >
-> I have a passion for finding solutions by analyzing real data. For any inquiries or a private consultation on business solutions, feel free to contact me!
+> I have a passion for finding solutions by analyzing real data. For any inquiries or a private consultation on business solutions, feel free to contact me! notkosoto@gmail.com
 \
 \
 ![Data Science](https://img.shields.io/badge/Data_Science-00458B?style=flat)
