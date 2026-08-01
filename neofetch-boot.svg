@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 460" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono','Courier New',monospace" width="980" height="460" xml:space="preserve" role="img" aria-label="Animated Ubuntu neofetch loading n75uxy190 skills">
+<style>
+  @keyframes boot { from { opacity:0; } to { opacity:1; } }
+  @keyframes blink { 0%,49%{opacity:1;} 50%,100%{opacity:0;} }
+  .ln  { opacity:0; animation: boot 0.34s ease-out forwards; }
+  text { white-space: pre; }
+  .cur { animation: blink 1s step-end infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .ln { animation: none; opacity:1; }
+    .cur { animation: none; }
+  }
+</style>
+<rect x="0" y="0" width="980" height="460" rx="12" fill="#1b1b26"/>
+<rect x="0" y="0" width="980" height="34" rx="12" fill="#2a2a38"/>
+<rect x="0" y="18" width="980" height="16" fill="#2a2a38"/>
+<circle cx="22" cy="17" r="6" fill="#ff5f56"/>
+<circle cx="44" cy="17" r="6" fill="#ffbd2e"/>
+<circle cx="66" cy="17" r="6" fill="#27c93f"/>
+<text x="490" y="21" fill="#565f89" font-size="12" text-anchor="middle">n75uxy190@ubuntu: ~</text>
+<text class="ln" x="18" y="60.0" font-size="11" style="animation-delay:0.00s"><tspan fill="#E95420">            .-/+oossssoo+/-.</tspan></text>
+<text class="ln" x="18" y="73.0" font-size="11" style="animation-delay:0.02s"><tspan fill="#E95420">        `:+ssssssssssssssssss+:`</tspan></text>
+<text class="ln" x="18" y="86.0" font-size="11" style="animation-delay:0.04s"><tspan fill="#E95420">      -+ssssssssssssssssssyyssss+-</tspan></text>
+<text class="ln" x="18" y="99.0" font-size="11" style="animation-delay:0.06s"><tspan fill="#E95420">    .ossssssssssssssssss</tspan><tspan fill="#ffffff">dMMMNy</tspan><tspan fill="#E95420">sssso.</tspan></text>
+<text class="ln" x="18" y="112.0" font-size="11" style="animation-delay:0.08s"><tspan fill="#E95420">   /sssssssssss</tspan><tspan fill="#ffffff">hdmmNNmmyNMMMMh</tspan><tspan fill="#E95420">ssssss/</tspan></text>
+<text class="ln" x="18" y="125.0" font-size="11" style="animation-delay:0.10s"><tspan fill="#E95420">  +sssssssss</tspan><tspan fill="#ffffff">hmydMMMMMMMNddddy</tspan><tspan fill="#E95420">ssssssss+</tspan></text>
+<text class="ln" x="18" y="138.0" font-size="11" style="animation-delay:0.12s"><tspan fill="#E95420"> /ssssssss</tspan><tspan fill="#ffffff">hNMMMyhhyyyyhmNMMMNh</tspan><tspan fill="#E95420">ssssssss/</tspan></text>
+<text class="ln" x="18" y="151.0" font-size="11" style="animation-delay:0.14s"><tspan fill="#E95420">.ssssssss</tspan><tspan fill="#ffffff">dMMMNh</tspan><tspan fill="#E95420">ssssssssss</tspan><tspan fill="#ffffff">hNMMMd</tspan><tspan fill="#E95420">ssssssss.</tspan></text>
+<text class="ln" x="18" y="164.0" font-size="11" style="animation-delay:0.16s"><tspan fill="#E95420">+ssss</tspan><tspan fill="#ffffff">hhhyNMMNy</tspan><tspan fill="#E95420">ssssssssssss</tspan><tspan fill="#ffffff">yNMMMy</tspan><tspan fill="#E95420">sssssss+</tspan></text>
+<text class="ln" x="18" y="177.0" font-size="11" style="animation-delay:0.18s"><tspan fill="#E95420">oss</tspan><tspan fill="#ffffff">yNMMMNyMMh</tspan><tspan fill="#E95420">ssssssssssssss</tspan><tspan fill="#ffffff">hmmmh</tspan><tspan fill="#E95420">ssssssso</tspan></text>
+<text class="ln" x="18" y="190.0" font-size="11" style="animation-delay:0.20s"><tspan fill="#E95420">oss</tspan><tspan fill="#ffffff">yNMMMNyMMh</tspan><tspan fill="#E95420">ssssssssssssss</tspan><tspan fill="#ffffff">hmmmh</tspan><tspan fill="#E95420">ssssssso</tspan></text>
+<text class="ln" x="18" y="203.0" font-size="11" style="animation-delay:0.22s"><tspan fill="#E95420">+ssss</tspan><tspan fill="#ffffff">hhhyNMMNy</tspan><tspan fill="#E95420">ssssssssssss</tspan><tspan fill="#ffffff">yNMMMy</tspan><tspan fill="#E95420">sssssss+</tspan></text>
+<text class="ln" x="18" y="216.0" font-size="11" style="animation-delay:0.24s"><tspan fill="#E95420">.ssssssss</tspan><tspan fill="#ffffff">dMMMNh</tspan><tspan fill="#E95420">ssssssssss</tspan><tspan fill="#ffffff">hNMMMd</tspan><tspan fill="#E95420">ssssssss.</tspan></text>
+<text class="ln" x="18" y="229.0" font-size="11" style="animation-delay:0.26s"><tspan fill="#E95420"> /ssssssss</tspan><tspan fill="#ffffff">hNMMMyhhyyyyhdNMMMNh</tspan><tspan fill="#E95420">ssssssss/</tspan></text>
+<text class="ln" x="18" y="242.0" font-size="11" style="animation-delay:0.28s"><tspan fill="#E95420">  +sssssssss</tspan><tspan fill="#ffffff">dmydMMMMMMMMddddy</tspan><tspan fill="#E95420">ssssssss+</tspan></text>
+<text class="ln" x="18" y="255.0" font-size="11" style="animation-delay:0.30s"><tspan fill="#E95420">   /sssssssssss</tspan><tspan fill="#ffffff">hdmNNNNmyNMMMMh</tspan><tspan fill="#E95420">ssssss/</tspan></text>
+<text class="ln" x="18" y="268.0" font-size="11" style="animation-delay:0.32s"><tspan fill="#E95420">    .ossssssssssssssssss</tspan><tspan fill="#ffffff">dMMMNy</tspan><tspan fill="#E95420">sssso.</tspan></text>
+<text class="ln" x="18" y="281.0" font-size="11" style="animation-delay:0.34s"><tspan fill="#E95420">      -+sssssssssssssssssyyyssss+-</tspan></text>
+<text class="ln" x="18" y="294.0" font-size="11" style="animation-delay:0.36s"><tspan fill="#E95420">        `:+ssssssssssssssssss+:`</tspan></text>
+<text class="ln" x="18" y="307.0" font-size="11" style="animation-delay:0.38s"><tspan fill="#E95420">            .-/+oossssoo+/-.</tspan></text>
+<text class="ln" x="300" y="60" font-size="13" font-weight="bold" style="animation-delay:0.50s"><tspan fill="#E95420">n75uxy190</tspan><tspan fill="#d4d4e0">@</tspan><tspan fill="#E95420">ubuntu</tspan></text>
+<text class="ln" x="300" y="76.0" fill="#565f89" font-size="13" font-weight="normal" text-anchor="start" style="animation-delay:0.61s">--------------------------</text>
+<text class="ln" x="300" y="92.0" font-size="13" style="animation-delay:0.72s"><tspan fill="#E95420" font-weight="bold">OS:</tspan><tspan fill="#d4d4e0"> Ubuntu 24.04 LTS x86_64</tspan></text>
+<text class="ln" x="300" y="108.0" font-size="13" style="animation-delay:0.83s"><tspan fill="#E95420" font-weight="bold">Kernel:</tspan><tspan fill="#d4d4e0"> 6.x-systems-programming</tspan></text>
+<text class="ln" x="300" y="124.0" font-size="13" style="animation-delay:0.94s"><tspan fill="#E95420" font-weight="bold">Shell:</tspan><tspan fill="#d4d4e0"> c++ / java / python</tspan></text>
+<text class="ln" x="300" y="140.0" font-size="13" style="animation-delay:1.05s"><tspan fill="#E95420" font-weight="bold">Packages:</tspan><tspan fill="#d4d4e0"> 24 (skills)</tspan></text>
+<text class="ln" x="300" y="156.0" font-size="13" style="animation-delay:1.16s"><tspan fill="#E95420" font-weight="bold">Toolchain:</tspan><tspan fill="#d4d4e0"> cmake · gcc · clang · gdb</tspan></text>
+<text class="ln" x="300" y="172.0" font-size="13" style="animation-delay:1.27s"><tspan fill="#E95420" font-weight="bold">Uptime:</tspan><tspan fill="#d4d4e0"> always compiling</tspan></text>
+<rect class="ln" x="300" y="192.0" width="14" height="14" rx="2" fill="#ff5f56" style="animation-delay:1.38s"/>
+<rect class="ln" x="320" y="192.0" width="14" height="14" rx="2" fill="#d78fb8" style="animation-delay:1.42s"/>
+<rect class="ln" x="340" y="192.0" width="14" height="14" rx="2" fill="#9ece6a" style="animation-delay:1.46s"/>
+<rect class="ln" x="360" y="192.0" width="14" height="14" rx="2" fill="#ffbd2e" style="animation-delay:1.50s"/>
+<rect class="ln" x="380" y="192.0" width="14" height="14" rx="2" fill="#7aa2f7" style="animation-delay:1.54s"/>
+<rect class="ln" x="400" y="192.0" width="14" height="14" rx="2" fill="#c4a7e7" style="animation-delay:1.58s"/>
+<rect class="ln" x="420" y="192.0" width="14" height="14" rx="2" fill="#56b6c2" style="animation-delay:1.62s"/>
+<rect class="ln" x="440" y="192.0" width="14" height="14" rx="2" fill="#d4d4e0" style="animation-delay:1.66s"/>
+<text class="ln" x="300" y="236.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:1.81s">Systems Programming:</text>
+<text class="ln" x="300" y="254.0" font-size="13" style="animation-delay:1.92s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">mmap / mprotect</tspan></text>
+<text class="ln" x="300" y="270.0" font-size="13" style="animation-delay:2.00s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">virtual memory</tspan></text>
+<text class="ln" x="300" y="286.0" font-size="13" style="animation-delay:2.07s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">syscalls / paging</tspan></text>
+<text class="ln" x="300" y="302.0" font-size="13" style="animation-delay:2.15s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">C++ / RAII</tspan></text>
+<text class="ln" x="535" y="236.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:2.23s">JVM Internals:</text>
+<text class="ln" x="535" y="254.0" font-size="13" style="animation-delay:2.34s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">AOT class loading</tspan></text>
+<text class="ln" x="535" y="270.0" font-size="13" style="animation-delay:2.42s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">GC internals</tspan></text>
+<text class="ln" x="535" y="286.0" font-size="13" style="animation-delay:2.49s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">bytecode / JIT</tspan></text>
+<text class="ln" x="535" y="302.0" font-size="13" style="animation-delay:2.57s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">OpenJDK</tspan></text>
+<text class="ln" x="760" y="236.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:2.65s">Build &amp; Toolchain:</text>
+<text class="ln" x="760" y="254.0" font-size="13" style="animation-delay:2.76s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">CMake</tspan></text>
+<text class="ln" x="760" y="270.0" font-size="13" style="animation-delay:2.83s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">linkers / loaders</tspan></text>
+<text class="ln" x="760" y="286.0" font-size="13" style="animation-delay:2.91s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">gdb / perf</tspan></text>
+<text class="ln" x="760" y="302.0" font-size="13" style="animation-delay:2.99s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">clang / gcc</tspan></text>
+<text class="ln" x="300" y="336.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:3.06s">Backend Runtime:</text>
+<text class="ln" x="300" y="354.0" font-size="13" style="animation-delay:3.17s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">Spring Boot 3.0</tspan></text>
+<text class="ln" x="300" y="370.0" font-size="13" style="animation-delay:3.25s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">API components</tspan></text>
+<text class="ln" x="300" y="386.0" font-size="13" style="animation-delay:3.33s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">security layer</tspan></text>
+<text class="ln" x="300" y="402.0" font-size="13" style="animation-delay:3.40s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">authentication</tspan></text>
+<text class="ln" x="535" y="336.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:3.48s">Database Systems:</text>
+<text class="ln" x="535" y="354.0" font-size="13" style="animation-delay:3.59s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">PostgreSQL</tspan></text>
+<text class="ln" x="535" y="370.0" font-size="13" style="animation-delay:3.67s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">JPA + JDBC</tspan></text>
+<text class="ln" x="535" y="386.0" font-size="13" style="animation-delay:3.75s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">Flyway migrations</tspan></text>
+<text class="ln" x="535" y="402.0" font-size="13" style="animation-delay:3.82s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">data layer OK</tspan></text>
+<text class="ln" x="760" y="336.0" fill="#c4a7e7" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:3.90s">Cloud &amp; Frontend:</text>
+<text class="ln" x="760" y="354.0" font-size="13" style="animation-delay:4.01s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">Docker + AWS</tspan></text>
+<text class="ln" x="760" y="370.0" font-size="13" style="animation-delay:4.09s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">microservices</tspan></text>
+<text class="ln" x="760" y="386.0" font-size="13" style="animation-delay:4.16s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">React / Angular</tspan></text>
+<text class="ln" x="760" y="402.0" font-size="13" style="animation-delay:4.24s"><tspan fill="#9d7cd8">► </tspan><tspan fill="#e39ac7">TypeScript</tspan></text>
+<text class="ln" x="300" y="434.0" fill="#9ece6a" font-size="13" font-weight="bold" text-anchor="start" style="animation-delay:4.32s">Development Environment Initialized Successfully</text>
+<rect class="cur" x="682" y="423.0" width="9" height="14" fill="#9ece6a" style="animation-delay:4.43s"/>
+</svg>
