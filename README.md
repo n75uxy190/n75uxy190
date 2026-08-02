@@ -23,7 +23,7 @@ Primarily I use Java, C++, Python, KNIME, Tensorflow, & more.
 - An Introduction to Galois Representations - by Alvaro Lozano-Robledo
 - Hypergeometric Functions, Character Sums and Applications - by Ling Long 
 
-<p align="center"><img src="harness-spin.svg" alt="build harness — falsification ritual" width="256"></p>
+<p align="center"><img src="harness-triptych.svg" alt="build · test · ship harness" width="100%"></p>
 
 <!--
 **n75uxy190/n75uxy190** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
