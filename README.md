@@ -10,6 +10,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-01A3A4?style=flat)
 ![Mathematics](https://img.shields.io/badge/Mathematics-CD5C5C?style=flat)
 ![Physics](https://img.shields.io/badge/Physics-0066CC?style=flat)
+> <p align="center"><img src="harness-spin.svg" alt="build harness — falsification ritual" width="256"></p>
 
 ## Tools & Languages 
 Primarily I use Java, C++, Python, KNIME, Tensorflow, & more.
